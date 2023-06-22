@@ -9,8 +9,7 @@ class MainWindow(QMainWindow):
         # Text für die Titelleiste des QMainWindows
         self.setWindowTitle("Painter-Fenster")
 
-        self.setMinimumWidth(400)
-        self.setMinimumHeight(400)
+        self.setMinimumSize(400, 400)
 
         central_widget = CentralWidget(self)
         self.setCentralWidget(central_widget)

@@ -11,14 +11,28 @@ class CentralWidget(QWidget):
         self.setWindowTitle("Zeichenprogramm")
 
     def paintEvent(self, event):
+
         painter = QPainter(self)
 
         # Fülle den Kreis mit Schwarz
         painter.setBrush(Qt.GlobalColor.black)
+
+        #oder
+        #painter.setBrusch(QColor("black"))
+
+        # (X-ACHSE, Y-ACHSE, durchmesser X-ACHSE, durchmesser Y-ACHSE)
         painter.drawEllipse(50, 50, 100, 100)
 
         # Ändere die Zeichenfarbe auf Grün
         painter.setPen(QPen(Qt.GlobalColor.green, 2))
+
+
+        # Liniendicke ändern + Farbe + Style
+        # pen = QPen()
+        # pen.setColor(QColor("red"))
+        # pen.setWidth(25)
+        # pen.setStyle(Qt.PenStyle.DashDotDotLine()
+
 
         # Zeichne eine Ellipse
         painter.drawEllipse(200, 50, 100, 100)
