@@ -3,6 +3,9 @@ from PyQt6.QtWidgets import QWidget
 from PyQt6.QtGui import QPainter, QPen, QFont
 from PyQt6.QtCore import Qt
 
+# Hey Git Link:  ab Zeile 76: https://github.com/chey00/pointNclick/blob/master/TemplateRoom.py
+#
+# Github: https://github.com/chey00/drawing/
 
 class CentralWidget(QWidget):
     def __init__(self, parent=None):
